@@ -3,7 +3,7 @@
 
     const ITEMS = window.SHOP_ITEMS || [];
 
-    const PAYMENT_URL = 'https://finance.ozon.ru/apps/sbp/ozonbankpay/019cdd7e-add9-786d-83d1-9e92497f4c5f';
+    const PAYMENT_URL = 'https://t.me/macclient11';
 
     const itemsList = document.getElementById('items_list');
     const itemInfo = document.getElementById('item_info');
