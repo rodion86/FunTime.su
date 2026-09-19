@@ -50,7 +50,13 @@
 
         const buyBtn = e.target.closest && e.target.closest('#buy_button');
         if (buyBtn) {
-            window.open(PAYMENT_URL, '_blank', 'noopener');
+            const a = document.createElement('a');
+            a.href = PAYMENT_URL;
+            a.target = '_blank';
+            a.rel = 'noopener';
+            document.body.appendChild(a);
+            a.click();
+            a.remove();
         }
     });
 
